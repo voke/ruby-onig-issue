@@ -51,6 +51,4 @@ void Init_myextension()
   onig_free(reg);
   onig_end();
 
-	printf("Hello Ruby C Extension!\n");
-
 }

@@ -51,8 +51,6 @@ int main() {
   onig_free(reg);
   onig_end();
 
-	printf("Hello C!\n");
-
   return 0;
 
 }

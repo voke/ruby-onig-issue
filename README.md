@@ -11,7 +11,6 @@ oniguruma version: 6.9.2
 match at 0
 0: (0-6)
 1: (3-6)
-Hello C!
 -----------------------------------
 Test Ruby C extension:
 checking for -lonig... yes
@@ -22,7 +21,6 @@ oniguruma version: 6.9.2
 match at 0
 0: (0-6)
 1: (3-6)
-Hello Ruby C Extension!
 ```
 
 #### Running on Debian GNU/Linux 9 (stretch)
@@ -35,7 +33,6 @@ oniguruma version: 6.9.2
 match at 0
 0: (0-6)
 1: (3-6)
-Hello C!
 -----------------------------------
 Test Ruby C extension:
 checking for -lonig... yes
@@ -46,7 +43,6 @@ oniguruma version: 6.9.2
 match at 0
 0: (0-6)
 1: (0-0)
-Hello Ruby C Extension!
 ```
 
 **NOTE:** `1: (0-0)` (empty match).
