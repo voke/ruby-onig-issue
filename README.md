@@ -48,3 +48,5 @@ match at 0
 1: (0-0)
 Hello Ruby C Extension!
 ```
+
+**NOTE:** `1: (0-0)` (empty match).
