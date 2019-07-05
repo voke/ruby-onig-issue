@@ -4,9 +4,6 @@
 
 int main() {
 
-  printf("oniguruma version: %d.%d.%d\n",
-    ONIGURUMA_VERSION_MAJOR, ONIGURUMA_VERSION_MINOR, ONIGURUMA_VERSION_TEENY);
-  
   int r;
   unsigned char *start, *range, *end;
   regex_t* reg;
@@ -15,6 +12,9 @@ int main() {
 
   static UChar* pattern = (UChar* )"foo([a-z]+)";
   static UChar* str     = (UChar* )"foobar";
+
+  printf("oniguruma version: %d.%d.%d\n",
+    ONIGURUMA_VERSION_MAJOR, ONIGURUMA_VERSION_MINOR, ONIGURUMA_VERSION_TEENY);
 
   r = onig_new(&reg, pattern, pattern + strlen((char* )pattern),
 	ONIG_OPTION_DEFAULT, ONIG_ENCODING_UTF8, ONIG_SYNTAX_RUBY, &einfo);

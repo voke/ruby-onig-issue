@@ -15,3 +15,6 @@ ENV LANG=C.UTF-8
 
 COPY c-program ./c-program
 COPY ruby-c-ext ./ruby-c-ext
+COPY run_all_tests.sh run_all_tests.sh
+
+CMD ["bash", "run_all_tests.sh"]
