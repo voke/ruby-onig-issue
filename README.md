@@ -1,5 +1,5 @@
 
-### Building a Ruby C Extension with oniguruma
+## Building a Ruby C Extension with oniguruma
 
 I'm having a problem when I try to include oniguruma (v6.9.2) in my ruby C extension. The regexp `foo([a-z]+)` with input `foobar` will not capture `bar` when running in _Debian GNU/Linux 9_.
 
@@ -7,7 +7,7 @@ I know ruby uses a modified version of oniguruma since 2.0 but if there is a col
 
 Maybe someone with more knowledge in ruby c extensions/onigmo/onig/compiling can point me in the right direction?
 
-### Tests
+## Tests
 
 I used the sample code taken from https://github.com/kkos/oniguruma/blob/master/sample/simple.c to write the tests.
 
@@ -23,7 +23,7 @@ and just compiled using gcc since there were no difference in the output.
 ```
 to indicate a correct match.
 
-#### Running on macOS Mojave 10.14.5
+### Running on macOS Mojave 10.14.5
 
 - Dependency: [oniguruma 6.9.2](https://github.com/kkos/oniguruma)
 
@@ -66,7 +66,7 @@ match at 0
 
 Successful! Everything works as expected.
 
-#### Running on Debian GNU/Linux 9
+### Running on Debian GNU/Linux 9
 
 Run using:
 ```shell
