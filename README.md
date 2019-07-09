@@ -64,7 +64,7 @@ match at 0
 1: (3-6)
 ```
 
-Successful! Everything works as expected.
+Successful! Everything works as expected. `1: (3-6)` shows that `bar` was matched.
 
 ### Running on Debian GNU/Linux 9
 
