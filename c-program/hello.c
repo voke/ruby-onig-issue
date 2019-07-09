@@ -14,15 +14,15 @@ int main() {
   static UChar* str     = (UChar* )"foobar";
 
   printf("oniguruma version: %d.%d.%d\n",
-    ONIGURUMA_VERSION_MAJOR, ONIGURUMA_VERSION_MINOR, ONIGURUMA_VERSION_TEENY);
+		ONIGURUMA_VERSION_MAJOR, ONIGURUMA_VERSION_MINOR, ONIGURUMA_VERSION_TEENY);
 
   r = onig_new(&reg, pattern, pattern + strlen((char* )pattern),
-	ONIG_OPTION_DEFAULT, ONIG_ENCODING_UTF8, ONIG_SYNTAX_RUBY, &einfo);
-  if (r != ONIG_NORMAL) {
-    UChar s[ONIG_MAX_ERROR_MESSAGE_LEN];
-    onig_error_code_to_str(s, r, &einfo);
-    fprintf(stderr, "ERROR: %s\n", s);
-  }
+	ONIG_OPTION_DEFAULT, ONIG_ENCODING_UTF8, ONIG_SYNTAX_DEFAULT, &einfo);
+	if (r != ONIG_NORMAL) {
+		char s[ONIG_MAX_ERROR_MESSAGE_LEN];
+		onig_error_code_to_str((UChar* )s, r, &einfo);
+		fprintf(stderr, "ERROR: %s\n", s);
+	}
 
   region = onig_region_new();
 
